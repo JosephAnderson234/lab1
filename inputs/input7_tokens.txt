@@ -1,9 +1,8 @@
 Iniciando Scanner para archivo: inputs/input7.txt
 
 TOKEN(BIN, "0b10101101")
-TOKEN(NOT_EQUAL, "=")
-TOKEN(BIN, "0b111
-")
+TOKEN(NOT_EQUAL, "!=")
+TOKEN(BIN, "0b111")
 TOKEN(END)
 
 Scanner exitoso

@@ -2,8 +2,7 @@ Iniciando Scanner para archivo: inputs/input8.txt
 
 TOKEN(NUM, "10")
 TOKEN(EQUAL, "==")
-TOKEN(NUM, "10
-")
+TOKEN(NUM, "10")
 TOKEN(END)
 
 Scanner exitoso

@@ -179,7 +179,7 @@ Token* Scanner::nextToken() {
             case 17:
                 c = nextChar();
                 if (c == '=') {
-                    return new Token(Token::NOT_EQUAL, c);
+                    return new Token(Token::NOT_EQUAL, input, first, current - first);
                 }
                 return new Token(Token::ERR, c);
             case 18:
@@ -194,13 +194,19 @@ Token* Scanner::nextToken() {
 
 
 void Scanner::rollBack() {
-    if (input[current] != '\0')
-        current--;
+    //if (input[current] != '\0') current--;
+    if (current > 0) current--;
 }
 
 char Scanner::nextChar() {
-    int c = input[current];
-    if (c != '\0') current++;
+    //int c = input[current];
+    //if (c != '\0') current++;
+    //return c;
+    char c = 0;
+    if (current < input.length()) {
+        c = input[current];
+        current++;
+    }
     return c;
 }
 
