@@ -28,9 +28,13 @@ public:
         SIN,
         COS,
         LOG,
-        OPREL,
+        LESS_THAN,
+        GREATER_THAN,
+        EQUAL,
+        NOT_EQUAL,
+        TRUE,
+        FALSE,
         BIN,
-        BOOL
     };
 
     // Atributos

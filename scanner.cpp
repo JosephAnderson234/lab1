@@ -150,9 +150,9 @@ Token* Scanner::nextToken() {
                 } else if (lexema == "log"){
                     return new Token(Token::LOG, input, first, current - first);
                 } else if (lexema == "True"){
-                    return new Token(Token::BOOL, input, first, current - first);
+                    return new Token(Token::TRUE, input, first, current - first);
                 } else if (lexema == "False"){
-                    return new Token(Token::BOOL, input, first, current - first);
+                    return new Token(Token::FALSE, input, first, current - first);
                 }
                 
                 return new Token(Token::IDENTIFIER, input, first, current - first);
