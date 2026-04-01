@@ -44,6 +44,8 @@ ostream& operator<<(ostream& outs, const Token& tok) {
         case Token::BIN: outs << "TOKEN(BIN, \"" << tok.text << "\")"; break;
         case Token::TRUE: outs << "TOKEN(TRUE, \"" << tok.text << "\")"; break;
         case Token::FALSE: outs << "TOKEN(FALSE, \"" << tok.text << "\")"; break;
+        case Token::LPAREN: outs << "TOKEN(LPAREN, \"" << tok.text << "\")"; break;
+        case Token::RPAREN: outs << "TOKEN(RPAREN, \"" << tok.text << "\")"; break;
     }
     return outs;
 }

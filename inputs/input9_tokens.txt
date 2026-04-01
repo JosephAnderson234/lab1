@@ -1,12 +1,18 @@
 Iniciando Scanner para archivo: inputs/input9.txt
 
-
+TOKEN(LPAREN, "(")
 TOKEN(NUM, "2")
 TOKEN(PLUS, "+")
 TOKEN(NUM, "2")
+TOKEN(RPAREN, ")")
+TOKEN(LESS_THAN, "<")
+TOKEN(NUM, "5")
+TOKEN(PLUS, "+")
+TOKEN(IDENTIFIER, "COS")
+TOKEN(LPAREN, "(")
+TOKEN(NUM, "15")
+TOKEN(RPAREN, ")")
+TOKEN(END)
 
-TOKEN(ERR, "<")
-Caracter invalido
-
-Scanner no exitoso
+Scanner exitoso
 

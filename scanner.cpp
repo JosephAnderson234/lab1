@@ -107,8 +107,8 @@ Token* Scanner::nextToken() {
                 else return new Token(Token::ERR, c);
                 break;
 
-            case 1: return new Token(Token::LPAREN);
-            case 2: return new Token(Token::RPAREN);
+            case 1: return new Token(Token::LPAREN, '(');
+            case 2: return new Token(Token::RPAREN, ')');
             case 3: return new Token(Token::PLUS, c);
             case 4: return new Token(Token::MINUS, c);
             
@@ -168,7 +168,9 @@ Token* Scanner::nextToken() {
             case 14:
                 c = nextChar();
                 if (c == 'b') state = 15; // para el caso de BIN (0b)
-                else state = 8; // para el caso de MUL (*)
+                else {
+                    state = 0;
+                }
                 break;
             case 15:
                 c = nextChar();

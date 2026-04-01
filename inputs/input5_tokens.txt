@@ -1,17 +1,17 @@
 Iniciando Scanner para archivo: inputs/input5.txt
 
 TOKEN(IDENTIFIER, "SIN")
-
+TOKEN(LPAREN, "(")
 TOKEN(IDENTIFIER, "LOG")
-
+TOKEN(LPAREN, "(")
 TOKEN(NUM, "100")
-
-
+TOKEN(RPAREN, ")")
+TOKEN(RPAREN, ")")
 TOKEN(PLUS, "+")
 TOKEN(IDENTIFIER, "COS")
-
+TOKEN(LPAREN, "(")
 TOKEN(BIN, "0b101")
-
+TOKEN(RPAREN, ")")
 TOKEN(END)
 
 Scanner exitoso
