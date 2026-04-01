@@ -1,0 +1,12 @@
+Iniciando Scanner para archivo: inputs/input10.txt
+
+TOKEN(IDENTIFIER, "SIN")
+TOKEN(LPAREN, "(")
+TOKEN(NUM, "90")
+TOKEN(RPAREN, ")")
+TOKEN(GREATER_THAN, ">")
+TOKEN(BIN, "0b1")
+TOKEN(END)
+
+Scanner exitoso
+

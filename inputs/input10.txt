@@ -1,1 +1,1 @@
-SIN(90) > 0b1 \# Mezcla de tipos y funciones
+SIN(90) > 0b1 # Mezcla de tipos y funciones
