@@ -17,12 +17,12 @@ print("Compilación exitosa")
 
 # Ejecutar
 input_dir = "inputs"
-for i in range(1, 3): 
+for i in range(1, 10):
     filename = f"input{i}.txt"
     filepath = os.path.join(input_dir, filename)
     if os.path.isfile(filepath):
         print(f"Ejecutado {filename}")
-        run_cmd = ["./a.exe", filepath]
+        run_cmd = ["./a.out", filepath]
         subprocess.run(run_cmd, capture_output=True, text=True)
     else:
         print(filename, "no encontrado en",input_dir)

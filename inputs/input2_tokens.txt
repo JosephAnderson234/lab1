@@ -1,0 +1,6 @@
+Iniciando Scanner para archivo: inputs/input2.txt
+
+TOKEN(END)
+
+Scanner exitoso
+

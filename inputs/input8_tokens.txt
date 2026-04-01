@@ -1,0 +1,11 @@
+Iniciando Scanner para archivo: inputs/input8.txt
+
+TOKEN(NUM, "10")
+TOKEN(ASSIGN, "=")
+TOKEN(ASSIGN, "=")
+TOKEN(NUM, "10
+")
+TOKEN(END)
+
+Scanner exitoso
+

@@ -1,0 +1,8 @@
+Iniciando Scanner para archivo: inputs/input7.txt
+
+TOKEN(BIN, "0b10101101")
+TOKEN(ERR, "!")
+Caracter invalido
+
+Scanner no exitoso
+

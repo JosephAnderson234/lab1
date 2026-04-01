@@ -1,0 +1,14 @@
+Iniciando Scanner para archivo: inputs/input3.txt
+
+TOKEN(IDENTIFIER, "COS")
+
+TOKEN(NUM, "0)")
+TOKEN(MUL, " ")
+TOKEN(IDENTIFIER, "LOG")
+
+TOKEN(NUM, "100")
+
+TOKEN(END)
+
+Scanner exitoso
+

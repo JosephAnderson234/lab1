@@ -1,0 +1,12 @@
+Iniciando Scanner para archivo: inputs/input9.txt
+
+
+TOKEN(NUM, "2")
+TOKEN(PLUS, "+")
+TOKEN(NUM, "2")
+
+TOKEN(ERR, "<")
+Caracter invalido
+
+Scanner no exitoso
+

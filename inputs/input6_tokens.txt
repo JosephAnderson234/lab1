@@ -1,0 +1,10 @@
+Iniciando Scanner para archivo: inputs/input6.txt
+
+TOKEN(TRUE, "True")
+TOKEN(PLUS, "+")
+TOKEN(IDENTIFIER, "True
+")
+TOKEN(END)
+
+Scanner exitoso
+
