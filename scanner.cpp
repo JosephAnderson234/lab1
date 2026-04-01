@@ -97,7 +97,7 @@ Token* Scanner::nextToken() {
                 else if (c == ')') state = 2;
                 else if (c == '+') state = 3;
                 else if (c == '-') state = 4;
-                else if (c == '*') state = 5;
+                else if (c == '*') state = 10;
                 else if (c == '/') state = 6;
                 else if (c == '=') state = 13;
                 else if (c == '!') state = 17;
@@ -112,16 +112,8 @@ Token* Scanner::nextToken() {
             case 3: return new Token(Token::PLUS, c);
             case 4: return new Token(Token::MINUS, c);
             
-            case 5: 
-                c = nextChar();
-                if (c == '*') state = 7; // para el caso de POW (**)
-                else state = 10; // para el caso de MUL (*)
-                break;
             
             case 6: return new Token(Token::DIV, c);
-
-            case 7:
-                return new Token(Token::POW, input, first, current - first);
 
             case 8: 
                 c = nextChar();
@@ -133,7 +125,6 @@ Token* Scanner::nextToken() {
                 rollBack();
                 return new Token(Token::NUM, input, first, current - first);
             case 10:
-                rollBack();
                 return new Token(Token::MUL, c);
             
             case 11:
