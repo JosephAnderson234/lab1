@@ -100,6 +100,9 @@ Token* Scanner::nextToken() {
                 else if (c == '*') state = 5;
                 else if (c == '/') state = 6;
                 else if (c == '=') state = 13;
+                else if (c == '!') state = 17;
+                else if (c == '<') state = 18;
+                else if (c == '>') state = 19;
                 else if (isdigit(c)) state = 8;
                 else return new Token(Token::ERR, c);
                 break;
@@ -157,6 +160,9 @@ Token* Scanner::nextToken() {
                 
                 return new Token(Token::IDENTIFIER, input, first, current - first);
             case 13:
+                if (c == '=') {
+                    return new Token(Token::EQUAL, c);
+                }
                 return new Token(Token::ASSIGN, c);
             //For me
             case 14:
@@ -172,6 +178,16 @@ Token* Scanner::nextToken() {
             case 16:
                 rollBack();
                 return new Token(Token::BIN, input, first, current - first);
+            case 17:
+                c = nextChar();
+                if (c == '=') {
+                    return new Token(Token::NOT_EQUAL, c);
+                }
+                return new Token(Token::ERR, c);
+            case 18:
+                return new Token(Token::LESS_THAN, c);
+            case 19:
+                return new Token(Token::GREATER_THAN, c);
         }
 
         
