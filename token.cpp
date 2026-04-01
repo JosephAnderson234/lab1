@@ -37,9 +37,13 @@ ostream& operator<<(ostream& outs, const Token& tok) {
         case Token::SIN: outs << "TOKEN(SIN, \"" << tok.text << "\")"; break;
         case Token::COS: outs << "TOKEN(COS, \"" << tok.text << "\")"; break;
         case Token::LOG: outs << "TOKEN(LOG, \"" << tok.text << "\")"; break;
-        case Token::OPREL: outs << "TOKEN(OPREL, \"" << tok.text << "\")"; break;
+        case Token::LESS_THAN: outs << "TOKEN(LESS_THAN, \"" << tok.text << "\")"; break;
+        case Token::GREATER_THAN: outs << "TOKEN(GREATER_THAN, \"" << tok.text << "\")"; break;
+        case Token::EQUAL: outs << "TOKEN(EQUAL, \"" << tok.text << "\")"; break;
+        case Token::NOT_EQUAL: outs << "TOKEN(NOT_EQUAL, \"" << tok.text << "\")"; break;
         case Token::BIN: outs << "TOKEN(BIN, \"" << tok.text << "\")"; break;
-        case Token::BOOL: outs << "TOKEN(BOOL, \"" << tok.text << "\")"; break;
+        case Token::TRUE: outs << "TOKEN(TRUE, \"" << tok.text << "\")"; break;
+        case Token::FALSE: outs << "TOKEN(FALSE, \"" << tok.text << "\")"; break;
     }
     return outs;
 }
