@@ -168,8 +168,12 @@ Token* Scanner::nextToken() {
             case 14:
                 c = nextChar();
                 if (c == 'b') state = 15; // para el caso de BIN (0b)
-                else {
-                    state = 0;
+                else if (isdigit(c)) {
+                    rollBack();
+                    state = 8; // para el caso de NUM que empieza con 0
+                } else {
+                    rollBack();
+                    return new Token(Token::NUM, input, first, current - first);
                 }
                 break;
             case 15:
