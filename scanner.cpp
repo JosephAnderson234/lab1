@@ -160,10 +160,11 @@ Token* Scanner::nextToken() {
                 
                 return new Token(Token::IDENTIFIER, input, first, current - first);
             case 13:
+                c = nextChar();
                 if (c == '=') {
-                    return new Token(Token::EQUAL, c);
+                    return new Token(Token::EQUAL, input, first, current - first);
                 }
-                return new Token(Token::ASSIGN, c);
+                return new Token(Token::ASSIGN,input, first, current - first);
             //For me
             case 14:
                 c = nextChar();
